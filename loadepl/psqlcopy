@@ -1,0 +1,30 @@
+\c mustwinbet
+COPY results FROM '/home/andy/python/mwb/loadepl/0001.csv' DELIMITER ',' CSV HEADER;
+\echo '01'
+COPY results FROM '/home/andy/python/mwb/loadepl/0102.csv' DELIMITER ',' CSV HEADER;
+\echo '02'
+COPY results FROM '/home/andy/python/mwb/loadepl/0203.csv' DELIMITER ',' CSV HEADER;
+\echo '03'
+COPY results FROM '/home/andy/python/mwb/loadepl/0304.csv' DELIMITER ',' CSV HEADER;
+\echo '04'
+COPY results FROM '/home/andy/python/mwb/loadepl/0405.csv' DELIMITER ',' CSV HEADER;
+\echo '05'
+COPY results FROM '/home/andy/python/mwb/loadepl/0506.csv' DELIMITER ',' CSV HEADER;
+\echo '06'
+COPY results FROM '/home/andy/python/mwb/loadepl/0607.csv' DELIMITER ',' CSV HEADER;
+\echo '07'
+COPY results FROM '/home/andy/python/mwb/loadepl/0708.csv' DELIMITER ',' CSV HEADER;
+\echo '08'
+COPY results FROM '/home/andy/python/mwb/loadepl/0809.csv' DELIMITER ',' CSV HEADER;
+\echo '09'
+COPY results FROM '/home/andy/python/mwb/loadepl/0910.csv' DELIMITER ',' CSV HEADER;
+\echo '10'
+COPY results FROM '/home/andy/python/mwb/loadepl/1011.csv' DELIMITER ',' CSV HEADER;
+\echo '11'
+COPY results FROM '/home/andy/python/mwb/loadepl/1112.csv' DELIMITER ',' CSV HEADER;
+\echo '12'
+COPY results FROM '/home/andy/python/mwb/loadepl/1213.csv' DELIMITER ',' CSV HEADER;
+\echo '13'
+COPY results FROM '/home/andy/python/mwb/loadepl/1314.csv' DELIMITER ',' CSV HEADER;
+\echo '14'
+COPY results FROM '/home/andy/python/mwb/loadepl/1415.csv' DELIMITER ',' CSV HEADER;

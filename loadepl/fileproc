@@ -1,0 +1,14 @@
+rm ~/fd/$1/output/*
+
+for f in `ls ~/fd/$1/*.csv`
+do
+
+export x=`head -1 $f`
+
+export y=`echo $x | sed 's/>2.5/gt25/g; s/<2.5/lt25/g'`
+
+sed '1d' $f >> ~/fd/$1/output/file.csv
+
+done
+
+cat ~/fd/$1/output/file.csv | cut -d',' -f1-10 > ~/fd/$1/output/filecut.csv

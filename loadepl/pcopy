@@ -1,0 +1,5 @@
+\c mustwinbet
+COPY rescuttmp FROM '/home/andy/fd/p/output/filecut.csv' DELIMITER ',' CSV HEADER;
+COPY rescuttmp FROM '/home/andy/fd/l1/output/filecut.csv' DELIMITER ',' CSV HEADER;
+COPY rescuttmp FROM '/home/andy/fd/l2/output/filecut.csv' DELIMITER ',' CSV HEADER;
+COPY rescuttmp FROM '/home/andy/fd/l3/output/filecut.csv' DELIMITER ',' CSV HEADER;

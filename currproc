@@ -1,0 +1,11 @@
+export x=`head -1 $1`
+
+export y=`echo $x | sed 's/>2.5/gt25/g; s/<2.5/lt25/g'`
+
+sed '1d' $1 > file.csv
+sed '$d' file.csv > file2.csv
+
+cat file2.csv | cut -d',' -f1-10 > filecut.csv
+
+rm file2.csv
+rm file.csv

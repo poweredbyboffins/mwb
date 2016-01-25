@@ -1,0 +1,3 @@
+\c mustwinbet
+delete from rescuttmp where matchdate > '31-jul-2014';
+

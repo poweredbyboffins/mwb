@@ -1,0 +1,5 @@
+fileproc p
+fileproc l1
+fileproc l2
+fileproc l3
+psql < pcopy

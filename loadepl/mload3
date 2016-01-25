@@ -1,0 +1,1 @@
+mongoimport -d mustwinbet -c games -f data --type json --jsonArray < bfout.json

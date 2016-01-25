@@ -1,0 +1,1 @@
+mongoimport -d footballbet -c fdchamp -f $1 --type csv < $2

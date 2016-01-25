@@ -1,0 +1,20 @@
+# set active ind
+psql mustwinbet < activeset
+# call api populate
+# games table
+python api3.py
+# get latest games
+python getdata.py
+## Example copy to database
+## fileproc cleans up the data
+psql mustwinbet < delcopy
+currproc 1516E0.csv
+psql mustwinbet < pcopy
+currproc 1516E1.csv
+psql mustwinbet < pcopy
+currproc 1516E2.csv
+psql mustwinbet < pcopy
+currproc 1516E3.csv
+psql mustwinbet < pcopy
+psql mustwinbet < /home/andy/psql/gamepredpop2
+python lineq6.py

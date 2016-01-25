@@ -1,0 +1,1 @@
+mongoimport -d mustwinbet -c $3 -f $1 --type csv < $2

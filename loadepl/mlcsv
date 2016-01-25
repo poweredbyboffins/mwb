@@ -1,0 +1,1 @@
+mongoimport -d footballbet -c footballstats -f statid,team,statname,value,statcode --type csv < statpivot.csv

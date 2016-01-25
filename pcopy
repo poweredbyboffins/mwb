@@ -1,0 +1,2 @@
+\c mustwinbet
+COPY rescuttmp FROM '/home/andy/python/mwb/filecut.csv' DELIMITER ',' CSV HEADER;
