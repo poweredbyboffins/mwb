@@ -214,11 +214,12 @@ headers = {'X-Application': '2mFk5Wl2BHvVl5OL', 'Content-Type': 'application/x-w
 eventTypesResult = getEventTypes()
 horseRacingEventTypeID = getEventTypeIDForEventTypeName(eventTypesResult, 'Soccer')
 
-print 'Eventype Id for Horse Racing is :' + str(horseRacingEventTypeID)
+#print 'Eventype Id for Horse Racing is :' + str(horseRacingEventTypeID)
 
 marketCatalogueResult = getMarketCatalogueForNextGBWin(horseRacingEventTypeID)
-print marketCatalogueResult
+#print marketCatalogueResult
 valcompold=''
+save=False
 for i in range(0, len(marketCatalogueResult)): 
 	tabdata=marketCatalogueResult[i]
         
@@ -228,7 +229,8 @@ for i in range(0, len(marketCatalogueResult)):
               #if (valcomp<>valcompold):
               #   print valcomp
               #   valcompold=valcomp
-              if (valcomp=='Barclays Premier League'):
+              print valcomp
+              if (valcomp=='English Premier League'):
                 save=True
                 valid='E0'
               elif (valcomp=='The Championship'):
@@ -259,8 +261,8 @@ for i in range(0, len(marketCatalogueResult)):
                    
                    print GameDate
         if (save==True):
-          # insert into database 
-         savingdata(HomeTeam,AwayTeam,GameDate,valid,valcomp); 
+            # insert into database 
+            savingdata(HomeTeam,AwayTeam,GameDate,valid,valcomp); 
 
 
 #marketid = getMarketId(marketCatalogueResult)

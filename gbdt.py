@@ -14,6 +14,7 @@ from sklearn.metrics import mean_squared_error
 ###############################################################################
 # Load data
 boston = datasets.load_boston()
+#print (boston.target)
 X, y = shuffle(boston.data, boston.target, random_state=13)
 X = X.astype(np.float32)
 offset = int(X.shape[0] * 0.9)
@@ -38,6 +39,7 @@ test_score = np.zeros((params['n_estimators'],), dtype=np.float64)
 
 for i, y_pred in enumerate(clf.staged_predict(X_test)):
     test_score[i] = clf.loss_(y_test, y_pred)
+    print (y_pred)
 
 plt.figure(figsize=(12, 6))
 plt.subplot(1, 2, 1)

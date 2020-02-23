@@ -1,5 +1,5 @@
 # set active ind
-psql < activeset
+psql mustwinbet < activeset
 # call api populate
 # games table
 python api3.py
@@ -7,13 +7,15 @@ python api3.py
 python getdata.py
 ## Example copy to database
 ## fileproc cleans up the data
-psql < delcopy
-currproc 1516E0.csv
-psql < pcopy
-currproc 1516E1.csv
-psql < pcopy
-currproc 1516E2.csv
-psql < pcopy
-currproc 1516E3.csv
-psql < pcopy
-psql < /home/andy/psql/gamepredpop
+psql mustwinbet < delcopy
+currproc 1617E0.csv
+psql mustwinbet < pcopy
+currproc 1617E1.csv
+psql mustwinbet < pcopy
+currproc 1617E2.csv
+psql mustwinbet < pcopy
+currproc 1617E3.csv
+psql mustwinbet < pcopy
+#psql mustwinbet < /home/andy/psql/gamepredpop
+#cd ../psql
+#runprod

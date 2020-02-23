@@ -1,0 +1,14 @@
+#cd
+#source p27/bin/activate
+#cd python/mwb
+#instructions
+#cd
+#deactivate
+cd ~/python/psql
+runpred
+#cd ~/lit*
+#hpart14
+#
+#cd pushdb
+#dataupdate
+

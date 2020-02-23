@@ -1,0 +1,6 @@
+cd ~/python/psql
+runpred
+cd ~/lit*
+hpart14
+cd pushdb
+dataupdate
