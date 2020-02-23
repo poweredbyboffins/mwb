@@ -20,7 +20,7 @@ def callAping(jsonrpc_req):
         conn = requests.post('https://identitysso.betfair.com/api/certlogin', data=payload, cert=('client-2048.crt', 'client-2048.key'), headers=headers)
         resp_json = conn.json()
         sessionToken=resp_json['sessionToken']
-        appKey = '2mFk5Wl2BHvVl5OL'
+        appKey = ''
         header2 = {'X-Application': appKey, 'X-Authentication': sessionToken, 'content-type': 'application/json'}
         
         url = "https://api.betfair.com/exchange/betting/json-rpc/v1"
